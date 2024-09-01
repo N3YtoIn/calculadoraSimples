@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/index.js" defer></script>
+    </head>
+	<body>
+        <div id="conteudo">
+            <h1 id="titulo">
+                CALCULADORA - SIMPLES
+            </h1>
+            <div id="form">
+				<form name="frmmedia" method="get" action="calculadora_simples.php">
+					<label> Valor 1:</label> <input type="text" name="txtn1" value="" id="valor1" class="valor" onkeypress="return setBlockNumber(event)"> <br>
+					<label>Valor 2:</label> <input type="text" name="txtn2" value="" id="valor2" class="valor"  onkeypress="return setBlockNumber(event)"> <br>
+
+					<div class="divOperacoes">
+						<div name="btnSomar" id="somar" class="botao">+</div>
+						<div name="btnSomar" id="subtrair" class="botao">-</div>
+					</div>
+
+					<div class="divOperacoes">
+						<div name="btnSomar" id="multiplicar" class="botao">*</div>
+						<div name="btnSomar" id="dividir" class="botao">/</div>
+					</div>
+					<div class="divOperacoes">
+						<div name="btnSomar" id="ce" class="botao">CE</div>
+						
+					</div>
+				</form>
+            </div>
+            <div id="resultado">
+                0
+            </div>
+        </div>
+	</body>
+</html>
